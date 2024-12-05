@@ -48,3 +48,5 @@ export const serve = () => {
 };
 
 export default gulp.parallel(minifyCss, minifyJs, minifyHtml, optimizeImages, serve);
+
+export const build = gulp.series(minifyCss, minifyJs, minifyHtml, optimizeImages);
