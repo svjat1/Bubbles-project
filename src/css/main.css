@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 #body {
     width: 100%;
     max-width: 1920px;
@@ -18,42 +17,35 @@ body {
     margin: 0 auto;
     padding: 0;
 }
-
 @media (max-width: 576px) {
     #body {
         width: 100%;
         height: auto;
     }
 }
-
 /*////////////////////////////////// <a> link style///////////////////////////////*/
 a {
     text-decoration: none !important;
     color: inherit;
     outline: none;
 }
-
 a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
 }
-
 .button a, .double-main-button a {
     text-decoration: none !important;
     color: inherit;
     outline: none;
 }
-
 .button, .double-main-button a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
 }
-
 /*//////////////////////////////////NavBar style///////////////////////////////*/
 .navbar {
     background-color: #4E5476;
 }
-
 .navbar-nav a {
     color: #FFF;
     text-align: center;
@@ -63,11 +55,9 @@ a:visited, a:hover, a:active {
     font-weight: 400;
     line-height: 1.5;
 }
-
 .nav-item:hover .nav-link {
     color: #F2C130;
 }
-
 .button {
     display: flex;
     justify-content: center;
@@ -86,12 +76,10 @@ a:visited, a:hover, a:active {
     font-weight: 400;
     line-height: normal;
 }
-
 .button:hover {
     background: #FFF;
     color: #1C274C;
 }
-
 .container-custom {
     max-width: 100vw;
     width: 100%;
@@ -99,13 +87,11 @@ a:visited, a:hover, a:active {
     overflow-wrap: break-word;
     /*padding: 0 2vw;*/
 }
-
 /*//////////////////////////////////Header mobile version style///////////////////////////////*/
 @media (max-width: 575px) {
     .container-custom {
         max-width: 100%; /* для мобільних екранів */
     }
-
     #header {
         width: 100%;
         height: 51.25rem;
@@ -113,17 +99,14 @@ a:visited, a:hover, a:active {
         justify-content: space-between;
         padding: 0 0 0.8rem 0;
     }
-
     .navbar-nav a {
         font-size: 0.875rem; /* Менший розмір тексту */
     }
-
     .button {
         width: 50vw;
         height: 2.875rem;
         gap: 0.625rem;
     }
-
     #bubbles {
         width: 85vw;
         color: #FFF;
@@ -136,19 +119,16 @@ a:visited, a:hover, a:active {
         letter-spacing: -0.27rem;
         word-wrap: break-word;
     }
-
     #english-bubble-block {
         margin-top: 4rem;
         width: 80%;
     }
-
     #by-greenForest-container {
         top: 12rem; /* 190px ≈ 12rem */
         width: 13rem; /* 191px ≈ 13rem */
         height: 3.2rem; /* 51px ≈ 3.2rem */
         border-radius: 6.875rem; /* 110px ≈ 6.875rem */
     }
-
     #by-greenForest-text {
         width: 9.94rem; /* 159px ≈ 9.94rem */
         height: 1.5rem; /* 24px ≈ 1.5rem */
@@ -161,7 +141,6 @@ a:visited, a:hover, a:active {
         font-size: 1rem; /* 16px ≈ 1rem */
         margin-top: 10.8125rem; /* 173px ≈ 10.8125rem */
     }
-
     /* Основна кнопка */
     #double-main-button {
         padding: 1.5rem 3.75rem; /* 24px ≈ 1.5rem, 60px ≈ 3.75rem */
@@ -170,7 +149,6 @@ a:visited, a:hover, a:active {
         font-size: 1.5rem; /* 24px ≈ 1.5rem */
         box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     }
-
     /* задній елемент, що імітує тіньову кнопку */
     #button-shadow {
         top: 0.5rem; /* 8px ≈ 0.5rem */
@@ -180,11 +158,9 @@ a:visited, a:hover, a:active {
         border: 0.125rem solid #FFC107; /* 2px ≈ 0.125rem */
         border-radius: 1.875rem; /* 30px ≈ 1.875rem */
     }
-
     .arrow-icon {
         display: none;
     }
-
     #circle-image-list {
         display: flex;
         justify-content: start;
@@ -193,12 +169,10 @@ a:visited, a:hover, a:active {
     }
     #circle-imag {
     }
-
     #circle-image-wrapper {
         height: 14.125rem; /* 226px ≈ 14.125rem */
         position: relative;
     }
-
     #avatar-1,
     #avatar-2,
     #avatar-3,
@@ -215,13 +189,11 @@ a:visited, a:hover, a:active {
         left: 0;
         margin-left: -2rem; /* -30px ≈ -2rem */
     }
-
     .circle-avatar:hover {
         background-color: rgb(243, 240, 240);
     }
 
 }
-
 /*//////////////////////////////////Header style///////////////////////////////*/
 .header {
     display: flex;
@@ -235,8 +207,6 @@ a:visited, a:hover, a:active {
     border-bottom-right-radius: 5.56rem;
     overflow-x: hidden;
 }
-
-
 .english-bubble-title {
     display: flex;
     width: 100%;
@@ -252,7 +222,6 @@ a:visited, a:hover, a:active {
     line-height: 7.57vw;
     letter-spacing: -0.39vw;
 }
-
 .english-bubble-container {
     position: relative;
     display: flex;
@@ -261,8 +230,6 @@ a:visited, a:hover, a:active {
     align-items: center;
     margin-top: 3.26vw;
 }
-
-
 .by-greenForest-container {
     position: absolute;
     top: 6.6vw;
@@ -276,7 +243,6 @@ a:visited, a:hover, a:active {
     justify-content: center;
     align-items: center;
 }
-
 .by-greenForest-text {
     display: flex;
     width: 11.04vw;
@@ -290,7 +256,6 @@ a:visited, a:hover, a:active {
     letter-spacing: -0.06vw;
     text-transform: uppercase;
 }
-
 .english-bubble-description {
     margin-top: 2.78vw;
     width: 70%;
@@ -303,14 +268,11 @@ a:visited, a:hover, a:active {
     font-weight: 400;
     line-height: normal;
 }
-
-
 /* Загальний контейнер кнопки */
 .double-button-wrapper {
     position: relative;
     display: inline-block;
 }
-
 /* Основна кнопка */
 .double-main-button {
     position: relative;
@@ -333,11 +295,9 @@ a:visited, a:hover, a:active {
     box-shadow: 0 0.28vw 0.56vw rgba(0, 0, 0, 0.1);
     border: none;
 }
-
 .double-main-button:hover {
     background: #FFF;
 }
-
 /* задній елемент, що імітує тіньову кнопку */
 .button-shadow {
     position: absolute;
@@ -351,8 +311,6 @@ a:visited, a:hover, a:active {
     border-radius: 2.08vw;
     transform: rotate(4.021deg);
 }
-
-/* Стилі для стрілки */
 .arrow-icon {
     position: absolute;
     z-index: 1;
@@ -361,14 +319,12 @@ a:visited, a:hover, a:active {
     transform: translateY(-50%);
     color: #2E2E40;
 }
-
 /*//////////////////////////////////Photo avatar circle style///////////////////////////////*/
 .circle-image-wrapper {
     width: 100%;
     height: 15.69vw;;
     position: relative;
 }
-
 .circle-image-list {
     display: flex;
     justify-content: center;
@@ -378,7 +334,6 @@ a:visited, a:hover, a:active {
     position: absolute;
     opacity: 0.5;
 }
-
 .circle-avatar {
     width: 15.69vw;
     height: 15.69vw;
@@ -389,11 +344,9 @@ a:visited, a:hover, a:active {
     left: 0;
     margin-left: -2.08vw;
 }
-
 .circle-avatar:hover {
     background-color: rgb(243, 240, 240);
 }
-
 /*//////////////////////////////////Events style///////////////////////////////*/
 .event-container {
     padding: 2rem 0;
@@ -404,7 +357,6 @@ a:visited, a:hover, a:active {
     height: auto;
     margin: 120px auto 0 auto;
 }
-
 .our-events {
     color: #FFF;
     font-family: Rubik, serif;
@@ -415,7 +367,6 @@ a:visited, a:hover, a:active {
     letter-spacing: -0.22rem;
 
 }
-
 .event-buttons-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -424,7 +375,6 @@ a:visited, a:hover, a:active {
     gap: 1rem;
     width: 80%;
 }
-
 .event-button {
     display: inline-flex;
     padding: 0.83rem 1.67rem;
@@ -441,22 +391,18 @@ a:visited, a:hover, a:active {
     font-weight: 400;
     line-height: normal;
 }
-
 .event-button:hover {
     background: #F2C130;
 }
-
 .event-button a {
     text-decoration: none;
     color: inherit;
     outline: none;
 }
-
 .event-button a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
 }
-
 /*//////////////////////////////////Event mobile version style///////////////////////////////*/
 @media (max-width: 576px) {
     .event-buttons-wrapper {
@@ -466,15 +412,12 @@ a:visited, a:hover, a:active {
         scrollbar-width: none;
         justify-content: flex-start;
     }
-
     .event-buttons-wrapper::-webkit-scrollbar {
         display: none;
     }
-
     .event-button {
         flex: 0 0 auto;
     }
-
     .our-events {
         color: #FFF;
         font-family: Rubik, serif;
@@ -484,14 +427,11 @@ a:visited, a:hover, a:active {
         line-height: normal;
         letter-spacing: -2px;
     }
-
     .event-container {
         margin-top: 40px;
     }
 }
-
 /*//////////////////////////////////Events sliders style///////////////////////////////*/
-/*///////////////////////////Slider 2/////////////////////////*/
 .slider-wrapper {
     width: 90%;
     display: flex;
@@ -499,12 +439,8 @@ a:visited, a:hover, a:active {
     align-items: center;
     flex-direction: column;
     margin: 60px auto 0 auto;
-    background-color: #007bff;
-
 }
-
 .wrapper-item {
-    background-color: #2f2f79;
     width: 100%;
     height: calc(90vw / 4);
     border-radius: 5vw;
@@ -513,19 +449,17 @@ a:visited, a:hover, a:active {
     transition: all 0.5s ease;
     cursor: pointer;
 }
-
 .front-item {
     position: absolute;
     width: 49.7%;
     height: 100%;
     z-index: 2;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, transform 0.5s ease;
     left: 35%;
 }
 .front-item img{
     height: 100%;
 }
-
 .back-item {
     position: absolute;
     width: 59%;
@@ -543,13 +477,16 @@ a:visited, a:hover, a:active {
     transition: transform 0.5s ease;
     left: 35%;
 }
-
 .icon-block {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.icon-block img,
+.icon-block2 img{
+    width: calc(3vw + 10px);
+    height: calc(3vw + 10px);
+}
 .info-block {
     display: flex;
     height: 70%;
@@ -557,7 +494,6 @@ a:visited, a:hover, a:active {
     justify-content: space-around;
     align-items: start;
 }
-
 .theme-block {
     color: #062440;
     font-family: Rubik, serif;
@@ -567,7 +503,6 @@ a:visited, a:hover, a:active {
     line-height: 48px;
     letter-spacing: -1.84px;
 }
-
 .theme-block-describe {
     color: #062440;
     font-family: Rubik, serif;
@@ -578,13 +513,11 @@ a:visited, a:hover, a:active {
     width: 50%;
     flex-wrap: wrap;
 }
-
 .button-block {
     display: flex;
     align-items: center;
     gap: 1vw;
 }
-
 .but-time, .but-day, .but-online {
     display: flex;
     justify-content: center;
@@ -603,23 +536,18 @@ a:visited, a:hover, a:active {
     line-height: normal;
     padding: 12px;
 }
-
 .button-between {
-    width: 15px;
+    width: 1vw;
     height: 15px;
     background: #D5CAF1;
-    margin: 0 -10px;
+    margin: 0 -1.3vw;
 }
-
-.wrapper-item:hover .front-item {
+.front-item.visible{
     transform: translateX(30.5%);
 }
-
-.wrapper-item:hover .back-item {
+.back-item.visible {
     transform: translateX(-59.4%);
 }
-
-
 /*///////////////////////////Slider 2/////////////////////////*/
 .wrapper-item-reverse {
     width: 100%;
@@ -629,7 +557,6 @@ a:visited, a:hover, a:active {
     margin: 5px auto;
     transition: all 0.5s ease;
     cursor: pointer;
-    background-color: red;
 }
 
 .front-item2 {
@@ -662,14 +589,12 @@ a:visited, a:hover, a:active {
     transition: transform 0.5s ease;
     left: 10%;
 }
-
 .icon-block2 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 30px;
 }
-
 .info-block2 {
     display: flex;
     height: 70%;
@@ -677,15 +602,6 @@ a:visited, a:hover, a:active {
     justify-content: space-around;
     align-items: start;
 }
-
-.wrapper-item-reverse:hover .front-item2 {
-    transform: translateX(-70.1%);
-}
-
-.wrapper-item-reverse:hover .back-item2 {
-    transform: translateX(52.7%);
-}
-
 .theme-block-describe2 {
     width: 354px;
     color: #062440;
@@ -696,9 +612,13 @@ a:visited, a:hover, a:active {
     line-height: normal;
     flex-wrap: wrap;
 }
-
+.front-item2.visible{
+    transform: translateX(-70.1%);
+}
+.back-item2.visible {
+    transform: translateX(52.7%);
+}
 /*///////////////////////////Slider 3/////////////////////////*/
-
 .info-block3, .info-block5, .info-block7 {
     width: 83%;
     display: flex;
@@ -707,11 +627,9 @@ a:visited, a:hover, a:active {
     justify-content: space-around;
     align-items: start;
 }
-
 .wrapper-item:hover .back-item3 {
     transform: translateX(-59.4%);
 }
-
 /*///////////////////////////Slider 5/////////////////////////*/
 .theme-block-describe5 {
     width: 71%;
@@ -739,10 +657,9 @@ a:visited, a:hover, a:active {
 /*//////////////////////////////////Events sliders mobile version style///////////////////////////////*/
 @media (max-width: 575px) {
     .slider-wrapper {
-        width: 386px;
-        margin-top: 30px;
-        height: 485px;
-
+        width: 90%;
+        margin-top: 5vw;
+        height: 80vw;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -754,7 +671,7 @@ a:visited, a:hover, a:active {
 
     .slider-wrapper > div {
         min-width: 100%;
-        margin-right: 15px;
+        margin-right: 3%;
         scroll-snap-align: start;
     }
 
@@ -764,157 +681,135 @@ a:visited, a:hover, a:active {
         justify-content: center;
         align-items: center;
     }
-
     .wrapper-item, .wrapper-item-reverse {
-        width: 386px;
-        height: 485px;
-        border-radius: 60px;
+        width: 90%;
+        height: 100vw;
+        border-radius: 8vw;
         position: relative;
-        margin: 5px auto;
+        margin: 2% auto;
         transition: all 0.5s ease;
         cursor: pointer;
     }
-
     .img {
-        width: 386px;
-        height: 246px;
+        width: 100%;
+        height: 50vw;
     }
-
     .front-item {
         position: absolute;
-        width: 387px;
-        height: 246px;
+        width: 100%;
+        height: 50vw;
         z-index: 2;
         left: 0;
     }
-
     .front-item2 {
         transform: translateX(0%);
         left: 0;
     }
-
     .front-item img, .front-item2 img {
-        width: 387px;
-        height: 246px;
+        width: 100%;;
+        height: 50vw;
     }
-
     .back-item, .back-item2 {
         position: absolute;
-        width: 385px;
-        height: 300px;
+        width: 100%;
+        height: 60vw;
         color: white;
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
-        border-radius: 40px;
+        border-radius: 8vw;
         background: #FFF;
-        font-size: 1.2em;
+        font-size: 4vw;
         font-weight: 500;
         z-index: 1;
         transition: transform 0.5s ease;
         transform: translateY(10%);
         left: 0;
     }
-
     .icon-block, .icon-block2 {
         display: none;
     }
-
     .info-block, .info-block2, .info-block5, .info-block7 {
         display: flex;
         width: 88%;
         height: 80%;
         flex-direction: column;
         justify-content: space-around;
-        margin-top: 20px;
+        margin-top: 5%;
     }
-
     .theme-block {
         display: none;
     }
-
     .theme-block-mob img {
-        margin-right: 12px;
+        margin-right: 3vw;
     }
-
     .theme-block-mob {
         display: flex;
         align-items: center;
         color: #062440;
         font-family: Rubik, serif;
-        font-size: 28px;
+        font-size: 6vw;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         letter-spacing: -1.12px;
     }
-
     .theme-block-describe, .theme-block-describe2, .theme-block-describe5 {
-        width: 328px;
+        width: 85%;
         color: #062440;
         font-family: Rubik, serif;
-        font-size: 20px;
+        font-size: 4.5vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 26px;
+        line-height: 6vw;
     }
-
     .button-block {
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 1.5vw;
     }
-
     .but-time, .but-day, .but-online {
-        font-size: 14px;
+        font-size: 4vw;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        padding: 12px 16px;
-        margin-bottom: 2px;
+        padding: 3vw 4vw;
+        margin-bottom: 1vw;
     }
-
     .button-between {
-        width: 17px;
-        height: 15px;
+        width: 4vw;
+        height: 3.5vw;
         background: #D5CAF1;
-        margin: 0 -10px;
+        margin: 0 -2.5vw;
     }
-
     .dots-container, .dotsS-container, .tariffs-dots-container {
         display: flex;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 2vw;
     }
-
     .dot, .dot-s, .tariffs-dot {
         display: inline-block;
-        width: 10px;
-        height: 10px;
+        width: 2.5vw;
+        height: 2.5vw;
         background-color: gray;
         border-radius: 50%;
-        margin: 0 5px;
+        margin: 0 1.25vw;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
-
     .dot.active {
         background-color: #007bff;
     }
-
     .dot-s.active {
         background-color: #007bff;
     }
-
     .tariffs-dot.active {
         background-color: #007bff;
     }
-
     .wrapper-item:hover .front-item,
     .wrapper-item-reverse:hover .front-item2 {
         transform: none;
     }
-
     .wrapper-item:hover .back-item,
     .wrapper-item-reverse:hover .back-item2 {
         transform: translateY(180px);

@@ -112,6 +112,33 @@ feedbackDots.forEach((dot, index) => {
     });
 });
 
+/////////////////scroll slider////////////
+const frontItem = document.querySelectorAll('.front-item');
+const backItem = document.querySelectorAll('.back-item')
+const frontItem2 = document.querySelectorAll('.front-item2');
+const backItem2 = document.querySelectorAll('.back-item2')
 
 
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Зупиняємо спостереження після додавання класу
+        }
+    });
+}, {
+    threshold: 0.8 // 50% елемента має бути видимим
+});
 
+frontItem.forEach(block => {
+    observer.observe(block);
+});
+backItem.forEach(block =>{
+    observer.observe(block)
+})
+frontItem2.forEach(block => {
+    observer.observe(block);
+});
+backItem2.forEach(block =>{
+    observer.observe(block)
+})
