@@ -40,10 +40,10 @@ WhatSliderWrapper.addEventListener('scroll', () => {
     });
 });
 // tariffs dots
-tariffsWrapper .addEventListener('scroll', () => {
+tariffsWrapper.addEventListener('scroll', () => {
 
-    const scrollPosition = tariffsWrapper .scrollLeft;
-    const itemWidth = tariffsWrapper .querySelector('.tariff-item').offsetWidth + 15;
+    const scrollPosition = tariffsWrapper.scrollLeft;
+    const itemWidth = tariffsWrapper.querySelector('.tariff-item').offsetWidth + 15;
 
     const activeIndex = Math.round(scrollPosition / itemWidth);
 
@@ -57,7 +57,6 @@ tariffsWrapper .addEventListener('scroll', () => {
 });
 
 
-
 function openVideo() {
     let videoContainer = document.getElementById("video-container");
     let videoPlayer = document.getElementById("video-player");
@@ -66,8 +65,9 @@ function openVideo() {
     videoPlayer.src = "https://www.youtube.com/embed/dQw4w9WgXcQ";
 
     videoContainer.style.display = "flex";
-    play.style.display ="none"
+    play.style.display = "none"
 }
+
 // function closeVideo() {
 //     let  videoContainer = document.getElementById("video-container");
 //     let videoPlayer = document.getElementById("video-player");
@@ -80,15 +80,16 @@ function openVideo() {
 // }
 
 
- // feedback pagination
+// feedback pagination
 const feedbackWrapper = document.querySelector('.feedback-wrapper-down');
 const feedbackDots = document.querySelectorAll('.dot-feedback');
 
 // Функція прокрутки (1 - вправо, -1 - вліво)
 function scrollFeedback(direction) {
-    const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth +150// Враховуємо відступи
-    feedbackWrapper.scrollBy({ left: itemWidth * direction, behavior: 'smooth' });
+    const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth + 150// Враховуємо відступи
+    feedbackWrapper.scrollBy({left: itemWidth * direction, behavior: 'smooth'});
 }
+
 // Відстеження активної крапки
 feedbackWrapper.addEventListener('scroll', () => {
     const scrollPosition = feedbackWrapper.scrollLeft;
@@ -108,7 +109,7 @@ feedbackWrapper.addEventListener('scroll', () => {
 feedbackDots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth + 10;
-        feedbackWrapper.scrollTo({ left: itemWidth * index, behavior: 'smooth' });
+        feedbackWrapper.scrollTo({left: itemWidth * index, behavior: 'smooth'});
     });
 });
 
@@ -133,16 +134,15 @@ const observer = new IntersectionObserver((entries, observer) => {
 frontItem.forEach(block => {
     observer.observe(block);
 });
-backItem.forEach(block =>{
+backItem.forEach(block => {
     observer.observe(block)
 })
 frontItem2.forEach(block => {
     observer.observe(block);
 });
-backItem2.forEach(block =>{
+backItem2.forEach(block => {
     observer.observe(block)
 })
-
 
 
 document.addEventListener('scroll', () => {
@@ -164,4 +164,46 @@ document.addEventListener('scroll', () => {
             thirdBox.classList.add('animate');
         }
     });
+});
+
+
+
+// Отримуємо кнопку "X" і поповер
+const closeButton = document.querySelector('.x');
+const closeButton2 = document.querySelector('.x2');
+const closeButton3 = document.querySelector('.x3');
+const closeButton4 = document.querySelector('.x4');
+const openButton = document.querySelector('.popoverButton');
+const openButton2 = document.querySelector('.popoverButton2');
+const openButton3 = document.querySelector('.popoverButton3');
+const openButton4 = document.querySelector('.popoverButton4');
+const popover = document.querySelector('.popoverInfo');
+const popover2 = document.querySelector('.popoverInfo2');
+const popover3 = document.querySelector('.popoverInfo3');
+const popover4 = document.querySelector('.popoverInfo4');
+
+// Додаємо обробник події на кнопку "X"
+closeButton.addEventListener('click', function() {
+    popover.style.display = 'none'; // Приховуємо поповер
+});
+openButton.addEventListener('click', function() {
+    popover.style.display = 'flex'; // Приховуємо поповер
+});
+closeButton2.addEventListener('click', function() {
+    popover2.style.display = 'none'; // Приховуємо поповер
+});
+openButton2.addEventListener('click', function() {
+    popover2.style.display = 'flex'; // Приховуємо поповер
+});
+closeButton3.addEventListener('click', function() {
+    popover3.style.display = 'none'; // Приховуємо поповер
+});
+openButton3.addEventListener('click', function() {
+    popover3.style.display = 'flex'; // Приховуємо поповер
+});
+closeButton4.addEventListener('click', function() {
+    popover4.style.display = 'none'; // Приховуємо поповер
+});
+openButton4.addEventListener('click', function() {
+    popover4.style.display = 'flex'; // Приховуємо поповер
 });

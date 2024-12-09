@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
@@ -447,9 +448,23 @@
                     <div class="tariff-container-1-theme">English friend</div>
                     <div class="tariff-container-1-describe-1">
                         <img src="./images/Bolt.png" alt="icon">
-                        <div class="tariff-container-1-text1">Доступ до стандартних івентів
-                            <img class="tariff-icon" src="./images/Info%20Circle%20(2).png" alt="icon">
+                        <div class="tariff-container-1-text1">
+                            Доступ до стандартних  <span>
+                            івентів
+                            <button class="popoverButton">i</button>
+                        </span>
+
                         </div>
+                            <div class="popoverInfo" popover anchor="popoverButton">
+                                <ul>
+                                    <li>Come and learn, </li>
+                                    <li>Music Therapy, </li>
+                                    <li>Sharing is caring,</li>
+                                    <li>English Meetup,</li>
+                                    <li>English Sunday Bubble</li>
+                                </ul>
+                                <button class='x'>x</button>
+                            </div>
                     </div>
                     <div class="tariff-container-1-describe-1">
                         <img src="./images/Bolt.png" alt="icon">
@@ -466,24 +481,62 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="infoModalLabel">Інформація</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Тут буде ваша додаткова інформація.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!--            контейнер 2-->
             <div class="tariff-container-2 tariff-item box center">
                 <div class="tariff-container-1-top">
                     <div class="tariff-container-1-theme">English lover</div>
                     <div class="tariff-container-1-describe-1">
                         <img src="./images/Bolt.png" alt="icon">
-                        <div class="tariff-container-1-text1">Доступ до стандартних івентів
-                            <img class="tariff-icon" src="./images/Info%20Circle%20(2).png" alt="icon">
+                        <div class="tariff-container-1-text1">
+                            Доступ до стандартних  <span>
+                            івентів
+                            <button class="popoverButton2">i</button>
+                                </span>
                         </div>
-
+                        <div class="popoverInfo2" popover anchor="popoverButton">
+                            <ul>
+                                <li>Come and learn, </li>
+                                <li>Music Therapy, </li>
+                                <li>Sharing is caring,</li>
+                                <li>English Meetup,</li>
+                                <li>English Sunday Bubble</li>
+                            </ul>
+                            <button class='x2'>x</button>
+                        </div>
                     </div>
                     <div class="tariff-container-1-describe-1">
                         <img src="./images/Bolt.png" alt="icon">
                         <div class="tariff-container-1-text1">Доступ до екстра івентів для
-                            старших рівнів
-                            <img class="tariff-icon" src="./images/Info%20Circle%20(2).png" alt="icon">
+                           <span>старших
+                            рівнів
+                            <button class="popoverButton3">i</button>
+                                </span>
                         </div>
-
+                        <div class="popoverInfo3" popover anchor="popoverButton">
+                            <ul>
+                                <li>Late Night English, </li>
+                                <li>Movie Talk, </li>
+                                <li>English Book Club</li>
+                            </ul>
+                            <button class='x3'>x</button>
+                        </div>
                     </div>
                     <div class="tariff-container-1-describe-1">
                         <img src="./images/Bolt.png" alt="icon">
@@ -521,17 +574,31 @@
                     </div>
                     <div class="tariff-container-1-describe-1">
                         <img src="./images/Bolt.png" alt="icon">
-                        <div class="tariff-container-1-text2">Доступ до стандартних
+                        <div class="tariff-container-1-text2">
+                            Доступ до стандартних  <span>
                             івентів
-                            <img class="tariff-icon" src="./images/Info%20Circle%20(2).png" alt="icon">
+                            <button class="popoverButton4">i</button>
+                        </span>
                         </div>
-
+                        <div class="popoverInfo4" popover anchor="popoverButton">
+                            <ul>
+                                <li>Come and learn, </li>
+                                <li>Music Therapy, </li>
+                                <li>Sharing is caring,</li>
+                                <li>English Meetup,</li>
+                                <li>English Sunday Bubble</li>
+                            </ul>
+                            <button class='x4'>x</button>
+                        </div>
                     </div>
                     <div class="tariff-container-1-describe-1">
                         <img src="./images/Bolt.png" alt="icon">
                         <div class="tariff-container-1-text1">Доступ до екстра івентів для
                         старших рівнів
-                            <img class="tariff-icon" src="./images/Info%20Circle%20(2).png" alt="icon"></div>
+                            <button type="button" class="btn btn-lg" id="popoverButton5" data-bs-toggle="popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+
+                            </button>
+                        </div>
                     </div>
                     <div class="tariff-container-1-describe-1">
                         <img src="./images/Bolt.png" alt="icon">

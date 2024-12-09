@@ -49,6 +49,66 @@ a:visited, a:hover, a:active {
     color: inherit;
 }
 
+/*/////////////////////////////popover btn////////////////////////////////*/
+.popoverInfo, .popoverInfo2,.popoverInfo3,.popoverInfo4 {
+    position: absolute; /* Виводимо поверх інших елементів */
+    z-index: 1000;
+    width: 18.75vw;
+    height: 10vw;
+    background: #ffffff;
+    border: none;
+    border-radius: 1.11vw;
+    display: none;
+    padding: 1vw;
+    overflow: hidden;
+    margin: 0;
+    transform: translate(64%, 18%);
+    box-shadow: 0 0.28vw 0.28vw 0 rgba(0, 0, 0, 0.25);
+}
+.popoverInfo3,.popoverInfo4{
+    transform: translate(93%, 110%);
+    height: 8vw;
+}
+.popoverInfo ul, .popoverInfo2 ul, .popoverInfo3 ul, .popoverInfo4 ul {
+    width: 13.88vw;
+    height: 6.94vw;
+    margin-top: 0.5vw;
+}
+.popoverInfo li, .popoverInfo2 li , .popoverInfo3 li, .popoverInfo4 li {
+    color: #062440;
+    font-family: Rubik, serif;
+    font-size: 0.97vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.39vw; /* 142.857% */
+}
+
+.popoverButton, .popoverButton2, .popoverButton3, .popoverButton4{
+    width: 1.60vw;
+    height:1.60vw;
+    border-radius: 50%;
+    border: 0.07vw solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.97vw;
+    background: none;
+    margin: 0 0.6vw;
+}
+.x, .x2 , .x3, .x4 {
+    width: 1.37vw;
+    height: 1.37vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    padding: 0 0 0.1vw 0;
+    font-size: 0.97vw;
+    margin-left: 1.2vw;
+}
+
+
 /*//////////////////////////////////NavBar style///////////////////////////////*/
 .navbar {
     background-color: #4E5476;
@@ -1107,19 +1167,21 @@ a:visited, a:hover, a:active {
         width: 90.2vw;
         background: #D5CAF1;
     }
+
     .event-access-component img,
     .community-component img,
     .qualified-teachers-component img,
     .regular-practice-component img,
-    .event-formats-component img{
+    .event-formats-component img {
         width: 14.02vw;
         height: 14.02vw;
     }
+
     .event-access-component div,
     .community-component div,
     .qualified-teachers-component div,
     .regular-practice-component div,
-    .event-formats-component div{
+    .event-formats-component div {
         width: 79.34vw;
         font-size: 6.54vw;
     }
@@ -1158,7 +1220,8 @@ a:visited, a:hover, a:active {
 .right {
     transform: translateY(30%);
 }
-.tariff-item{
+
+.tariff-item {
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
     position: relative;
@@ -1170,7 +1233,6 @@ a:visited, a:hover, a:active {
     transform: translateX(0) translateY(0);
     opacity: 1;
 }
-
 
 
 .tariffs-wrapper {
@@ -1292,7 +1354,9 @@ a:visited, a:hover, a:active {
     width: 1.67vw;
     height: auto;
 }
-
+.tariff-container-1-text1 span,.tariff-container-1-text2 span{
+    display: flex;
+}
 .container-1-bottom {
     width: 100%;
     height: 25%;
@@ -1412,7 +1476,7 @@ a:visited, a:hover, a:active {
 /*//////////////////////////////////Tariffs Mobile style///////////////////////////////*/
 @media (max-width: 575px) {
     .tariffs-wrapper {
-        width:  100vw;
+        width: 100vw;
         height: auto;
         flex-shrink: 0;
         border-radius: 9.35vw;
@@ -1439,9 +1503,10 @@ a:visited, a:hover, a:active {
     }
 
     .tariffs-theme {
-        font-size:11.7vw;
+        font-size: 11.7vw;
         letter-spacing: -0.47vw;
     }
+
     .tariff-container-1, .tariff-container-2, .tariff-container-3 {
         width: 90.2vw;
         height: 163vw;
@@ -1450,6 +1515,7 @@ a:visited, a:hover, a:active {
         padding: 6.31vw;
         scroll-snap-align: start;
     }
+
     .tariff-container-1-theme {
         width: 110%;
         font-size: 9.35vw;
@@ -1458,6 +1524,7 @@ a:visited, a:hover, a:active {
         justify-content: center;
         margin-bottom: 9.35vw;
     }
+
     .tariff-container-1-describe-1 {
         width: 100%;
         display: flex;
@@ -1465,11 +1532,13 @@ a:visited, a:hover, a:active {
         align-items: start;
         margin-bottom: 4vw
     }
+
     .tariff-container-1-describe-1 img {
         width: 4.21vw;
         height: 4.21vw;
         margin: 0.3vw 2vw 0 0;
     }
+
     .tariff-container-1-describe-1 div {
         font-size: 4.21vw;
     }
@@ -1492,7 +1561,8 @@ a:visited, a:hover, a:active {
     .tariffs-dots-container {
         margin-bottom: 9.35vw;
     }
-    .tariff-container-button{
+
+    .tariff-container-button {
         width: 79.02vw;
         padding: 5.61vw 13.12vw;
         gap: 2.34vw;
@@ -1527,6 +1597,7 @@ a:visited, a:hover, a:active {
     letter-spacing: -0.33vw;
     animation: rotateText 6s linear infinite;
 }
+
 @keyframes rotateText {
     0% {
         transform: rotate(3deg) translateX(-100%); /* Текст починається за правим краєм екрану */
@@ -1535,6 +1606,7 @@ a:visited, a:hover, a:active {
         transform: rotate(3deg) translateX(100%); /* Текст знову рухається ліворуч */
     }
 }
+
 /*//////////////////////////////////Your english bubbles Mobile style///////////////////////////////*/
 @media (max-width: 575px) {
     .your-bubble {
@@ -1730,7 +1802,7 @@ a:visited, a:hover, a:active {
     }
 
     .mobile-screenshot-section {
-        width:  100vw;
+        width: 100vw;
         height: 164.9vw;
         flex-shrink: 0;
         background-color: #997AEA;
@@ -1740,7 +1812,8 @@ a:visited, a:hover, a:active {
         align-items: center;
         margin-bottom: 1.17vw;
     }
-    .mobile-screenshot-section img{
+
+    .mobile-screenshot-section img {
         width: 85.75vw;
         height: 157.24vw;
     }
@@ -1752,15 +1825,18 @@ a:visited, a:hover, a:active {
         padding: 5.61vw;
         margin-bottom: 1.17vw;
     }
+
     .step-describe {
         width: 88.88vw;
         height: 16.85vw;
         padding-right: 4.68vw;
         font-size: 4.68vw;
     }
-    .step-theme{
+
+    .step-theme {
         font-size: 7.48vw;
     }
+
     #step3, #step4, #step5 {
         width: 100vw;
         height: 47.9vw;
@@ -1844,12 +1920,14 @@ a:visited, a:hover, a:active {
     background: #383F65;
     box-shadow: 0.56vw 0.28vw 1.11vw 0 rgba(0, 0, 0, 0.25);
 }
+
 #video-player {
     width: 85.83vw;
     height: 48.41vw;
     border-radius: 4.17vw;
     margin-bottom: 1.4vw
 }
+
 .button-play {
     width: 23.06vw;;
     height: 8.89vw;
@@ -1859,10 +1937,12 @@ a:visited, a:hover, a:active {
     background: #576091;
     padding: 1.67vw;
 }
-.button-play img{
+
+.button-play img {
     width: 5.56vw;
     height: 5.56vw
 }
+
 .button-play div {
     color: #FFF;
     font-family: Rubik, serif;
@@ -2022,8 +2102,8 @@ iframe {
 }
 
 .feedback-item {
-    width:  18.61vw;
-    height:  24.17vw;
+    width: 18.61vw;
+    height: 24.17vw;
     border-radius: 2.78vw;
     background: #F5F5F7;
     display: flex;
@@ -2090,10 +2170,12 @@ iframe {
     font-weight: 500;
     line-height: normal;
 }
-.comment-avatar img{
+
+.comment-avatar img {
     width: 3.47vw;
     height: 3.47vw;
 }
+
 .commentator-location {
     color: #1C274C;
     font-family: Rubik, serif;
@@ -2124,7 +2206,7 @@ iframe {
     background-color: #F2C130; /* Активна крапка */
 }
 
-#dot-feedback, #dot-feedback2, #dot-feedback3,#dot-feedback4 {
+#dot-feedback, #dot-feedback2, #dot-feedback3, #dot-feedback4 {
     display: none;
 }
 
@@ -2161,18 +2243,22 @@ iframe {
     .feedback-pagination {
         display: none
     }
-    .item-theme{
+
+    .item-theme {
         width: 43.69vw;
         height: 7.71vw;
         font-size: 3.27vw
     }
+
     .item-describe {
         font-size: 3.74vw;
         line-height: 6.54vw
     }
+
     .read-far {
         font-size: 3.74vw;
     }
+
     .commentator-info {
         margin-left: 0.69vw;
     }
@@ -2180,18 +2266,22 @@ iframe {
     .commentator {
         font-size: 3.27vw
     }
-    .comment-avatar img{
+
+    .comment-avatar img {
         width: 11.68vw;
         height: 11.68vw;
     }
+
     .commentator-location {
         font-size: 3.27vw
     }
+
     .dots-feedback {
         width: 28.36vw;
         height: 3.74vw
     }
-    .dot-feedback{
+
+    .dot-feedback {
         width: 3.74vw;
         height: 3.74vw
     }
@@ -2224,7 +2314,7 @@ iframe {
         flex: 0 0 auto;
     }
 
-    #dot-feedback, #dot-feedback2, #dot-feedback3,#dot-feedback4 {
+    #dot-feedback, #dot-feedback2, #dot-feedback3, #dot-feedback4 {
         display: flex;
     }
 
@@ -2251,7 +2341,7 @@ iframe {
     align-items: center;
     color: #FFF;
     font-family: Rubik, serif;
-    font-size:  5.56vw;
+    font-size: 5.56vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -2379,13 +2469,16 @@ iframe {
     font-weight: 400;
     line-height: normal;
 }
-.social svg{
+
+.social svg {
     width: 2.78vw;
     height: 2.78vw;
 }
-.social div{
+
+.social div {
     font-size: 2.22vw;
 }
+
 .social:hover {
     background: #ffffff;
 }
@@ -2513,8 +2606,8 @@ iframe {
     }
 
     .telegram svg {
-        width:  9.35vw;
-        height:  9.35vw;
+        width: 9.35vw;
+        height: 9.35vw;
         margin-bottom: 2.34vw;
     }
 
@@ -2546,11 +2639,13 @@ iframe {
         font-size: 5.61vw;
         padding: 5.61vw;
     }
-    .social svg{
+
+    .social svg {
         width: 9.35vw;
         height: 9.35vw;
     }
-    .social div{
+
+    .social div {
         font-size: 5.61vw;
     }
 
@@ -2580,10 +2675,12 @@ iframe {
     font-weight: 400;
     line-height: normal;
 }
-.f-button svg{
+
+.f-button svg {
     width: 1.2vw;
     height: 1.2vw;
 }
+
 .f-button span {
     margin-left: 0.69vw;
     font-size: 1.11vw;
