@@ -142,3 +142,26 @@ frontItem2.forEach(block => {
 backItem2.forEach(block =>{
     observer.observe(block)
 })
+
+
+
+document.addEventListener('scroll', () => {
+    const boxes = document.querySelectorAll('.box');
+    const triggerPoint = window.innerHeight * 0.8; // Точка, коли анімація запускається
+    let firstTwoAnimated = false;
+    const thirdBox = document.querySelector('.tariff-container-3');
+
+    boxes.forEach((box, index) => {
+        const boxTop = box.getBoundingClientRect().top;
+
+        if (boxTop < triggerPoint) {
+            box.classList.add('animate');
+            if (index < 2) {
+                firstTwoAnimated = true;
+            }
+        }
+        if (firstTwoAnimated) {
+            thirdBox.classList.add('animate');
+        }
+    });
+});

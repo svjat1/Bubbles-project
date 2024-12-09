@@ -1145,6 +1145,34 @@ a:visited, a:hover, a:active {
 }
 
 /*//////////////////////////////////Tariffs style///////////////////////////////*/
+.left {
+    transform: translateX(50%);
+}
+
+/* Центральний блок */
+.center {
+    transform: translateX(-50%);
+}
+
+/* Правий блок */
+.right {
+    transform: translateY(30%);
+}
+.tariff-item{
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+    position: relative;
+}
+
+
+/* Клас для анімації, що додається під час прокручування */
+.box.animate {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+}
+
+
+
 .tariffs-wrapper {
     width: 95vw;
     /*height: 1015px;*/
@@ -1153,6 +1181,7 @@ a:visited, a:hover, a:active {
     background: #F5F5F7;
     margin: 8vw auto 0 auto;
     overflow: hidden;
+    transition: transform 0.5s ease, opacity 1s ease;
 }
 
 .tariffs-top-section {
@@ -1475,7 +1504,11 @@ a:visited, a:hover, a:active {
 
 /*//////////////////////////////////Your english bubbles style///////////////////////////////*/
 .your-bubble-wrapper {
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23vw;
     overflow-x: hidden;
     overflow-y: hidden;
     margin-top: 6.73vw;
@@ -1483,17 +1516,25 @@ a:visited, a:hover, a:active {
 }
 
 .your-bubble {
-    width: 130%;
+    width: 100%;
     color: rgba(255, 255, 255, 0.50);
+    white-space: nowrap;
     font-family: Rubik, serif;
     font-size: 8.3vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.33vw;
-    transform: rotate(2deg);
+    animation: rotateText 6s linear infinite;
 }
-
+@keyframes rotateText {
+    0% {
+        transform: rotate(3deg) translateX(-100%); /* Текст починається за правим краєм екрану */
+    }
+    100% {
+        transform: rotate(3deg) translateX(100%); /* Текст знову рухається ліворуч */
+    }
+}
 /*//////////////////////////////////Your english bubbles Mobile style///////////////////////////////*/
 @media (max-width: 575px) {
     .your-bubble {
@@ -1804,10 +1845,10 @@ a:visited, a:hover, a:active {
     box-shadow: 0.56vw 0.28vw 1.11vw 0 rgba(0, 0, 0, 0.25);
 }
 #video-player {
-    width: 84.83vw;
-    height: 47.21vw;
+    width: 85.83vw;
+    height: 48.41vw;
     border-radius: 4.17vw;
-    margin-bottom: 1.5vw
+    margin-bottom: 1.4vw
 }
 .button-play {
     width: 23.06vw;;
@@ -2083,7 +2124,7 @@ iframe {
     background-color: #F2C130; /* Активна крапка */
 }
 
-#dot-feedback, #dot-feedback2 {
+#dot-feedback, #dot-feedback2, #dot-feedback3,#dot-feedback4 {
     display: none;
 }
 
@@ -2522,10 +2563,9 @@ iframe {
 }
 
 .footer .f-button {
-    width: auto;
-    height: auto;
-    padding: 3.04vw 4.67vw;
-    display: inline-flex;
+    width: 9.26vw;
+    height: 3.47vw;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.69vw;
@@ -2541,12 +2581,12 @@ iframe {
     line-height: normal;
 }
 .f-button svg{
-    width: 5vw;
-    height: 5vw;
+    width: 1.2vw;
+    height: 1.2vw;
 }
 .f-button span {
     margin-left: 0.69vw;
-    font-size: 3.74vw;
+    font-size: 1.11vw;
 }
 
 .f-button:hover {
