@@ -10,7 +10,7 @@ const dots3 = document.querySelectorAll('.tariffs-dot');
 sliderWrapper.addEventListener('scroll', () => {
 
     const scrollPosition = sliderWrapper.scrollLeft;
-    const itemWidth = sliderWrapper.querySelector('.wrapper-item').offsetWidth + 15;
+    const itemWidth = sliderWrapper.querySelector('.wrapper-item').offsetWidth + 55;
     const totalItems = sliderWrapper.querySelectorAll('.wrapper-item').length;
 
     const activeIndex = Math.floor(scrollPosition / itemWidth);
@@ -86,7 +86,7 @@ const feedbackDots = document.querySelectorAll('.dot-feedback');
 
 // Функція прокрутки (1 - вправо, -1 - вліво)
 function scrollFeedback(direction) {
-    const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth + 10; // Враховуємо відступи
+    const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth +150// Враховуємо відступи
     feedbackWrapper.scrollBy({ left: itemWidth * direction, behavior: 'smooth' });
 }
 // Відстеження активної крапки
