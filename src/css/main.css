@@ -522,11 +522,12 @@ a:visited, a:hover, a:active {
     justify-content: center;
     align-items: center;
 }
-.icon-block img,
-.icon-block-reverse img {
+.icon-block svg,
+.icon-block-reverse svg {
     width: calc(3vw + 10px);
     height: calc(3vw + 10px);
 }
+
 .info-block {
     display: flex;
     height: 70%;
@@ -642,7 +643,7 @@ a:visited, a:hover, a:active {
     align-items: start;
 }
 .theme-block-describe-reverse {
-    width: 50%;
+    width: 70%;
     color: #062440;
     font-family: Rubik, serif;
     font-size: 1.5vw;
@@ -650,6 +651,9 @@ a:visited, a:hover, a:active {
     font-weight: 400;
     line-height: normal;
     flex-wrap: wrap;
+}
+span{
+    display: flex;
 }
 .front-item-reverse.visible {
     transform: translateX(-70.1%);
@@ -922,11 +926,11 @@ a:visited, a:hover, a:active {
     font-weight: 400;
     line-height: normal;
 }
-.event-access-component img,
-.community-component img,
-.qualified-teachers-component img,
-.regular-practice-component img,
-.event-formats-component img {
+.event-access-component svg,
+.community-component svg,
+.qualified-teachers-component svg,
+.regular-practice-component svg,
+.event-formats-component svg {
     width: 4.16vw;
     height: 4.16vw;
     flex-shrink: 0;
@@ -1146,10 +1150,11 @@ a:visited, a:hover, a:active {
     align-items: start;
     margin-bottom: 1.5vw;
 }
-.tariff-container-describe-section img {
-    width: 2vw;
-    height: 2vw;
-    margin: 0.3vw 1vw 0 0;
+.tariff-container-describe-section img{
+    width: 1.8vw;
+    height: 1.8vw;
+    margin: 0.2vw 1.2vw;
+    border:#F4E3B0;
 }
 .tariff-describe-text-section,
 .tariff-describe-text-section-2,
@@ -1400,10 +1405,10 @@ a:visited, a:hover, a:active {
 }
 @keyframes rotateText {
     0% {
-        transform: rotate(3deg) translateX(-115%);
+        transform: rotate(3deg) translateX(115%);
     }
     100% {
-        transform: rotate(3deg) translateX(100%);
+        transform: rotate(3deg) translateX(-100%);
     }
 }
 /*//////////////////////////////////Your english bubbles Mobile style///////////////////////////////*/
@@ -1463,6 +1468,9 @@ a:visited, a:hover, a:active {
     flex-direction: column;
     justify-content: space-between;
 }
+.step-5:hover{
+    background: #F2C130;
+}
 .step-theme {
     color: #1C274C;
     font-family: Rubik, serif;
@@ -1470,6 +1478,10 @@ a:visited, a:hover, a:active {
     font-style: italic;
     font-weight: 500;
     line-height: normal;
+}
+.step-theme-5{
+    display: flex;
+    justify-content: space-between;
 }
 .step-describe {
     color: #1C274C;
@@ -1680,6 +1692,7 @@ a:visited, a:hover, a:active {
     border: 0.69vw solid #FFF;
     background: #383F65;
     box-shadow: 0.56vw 0.28vw 1.11vw 0 rgba(0, 0, 0, 0.25);
+    margin-top: 4vw;
 }
 #video-player {
     width: 85.83vw;
