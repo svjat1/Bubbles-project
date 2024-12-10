@@ -1,136 +1,19 @@
-const sliderWrapper = document.querySelector('.slider-wrapper');
-const WhatSliderWrapper = document.querySelector('.what-you-get-slider');
-const tariffsWrapper = document.querySelector('.tariffs-bottom-section')
-
-const dots = document.querySelectorAll('.dot');
-const dots2 = document.querySelectorAll('.dot-s');
-const dots3 = document.querySelectorAll('.tariffs-dot');
-
-// slider dots
-sliderWrapper.addEventListener('scroll', () => {
-
-    const scrollPosition = sliderWrapper.scrollLeft;
-    const itemWidth = sliderWrapper.querySelector('.wrapper-item').offsetWidth + 55;
-    const totalItems = sliderWrapper.querySelectorAll('.wrapper-item').length;
-
-    const activeIndex = Math.floor(scrollPosition / itemWidth);
-
-    dots.forEach((dot, index) => {
-        if (index === activeIndex) {
-            dot.classList.add('active');
-        } else {
-            dot.classList.remove('active');
-        }
-    });
-});
-// what will you get dots
-WhatSliderWrapper.addEventListener('scroll', () => {
-
-    const scrollPosition = WhatSliderWrapper.scrollLeft;
-    const itemWidth = WhatSliderWrapper.querySelector('.item').offsetWidth + 15;
-
-    const activeIndex = Math.round(scrollPosition / itemWidth);
-
-    dots2.forEach((dots2, index) => {
-        if (index === activeIndex) {
-            dots2.classList.add('active');
-        } else {
-            dots2.classList.remove('active');
-        }
-    });
-});
-// tariffs dots
-tariffsWrapper.addEventListener('scroll', () => {
-
-    const scrollPosition = tariffsWrapper.scrollLeft;
-    const itemWidth = tariffsWrapper.querySelector('.tariff-item').offsetWidth + 15;
-
-    const activeIndex = Math.round(scrollPosition / itemWidth);
-
-    dots3.forEach((dots3, index) => {
-        if (index === activeIndex) {
-            dots3.classList.add('active');
-        } else {
-            dots3.classList.remove('active');
-        }
-    });
-});
-
-
-function openVideo() {
-    let videoContainer = document.getElementById("video-container");
-    let videoPlayer = document.getElementById("video-player");
-    let play = document.getElementById("button-play")
-
-    videoPlayer.src = "https://www.youtube.com/embed/dQw4w9WgXcQ";
-
-    videoContainer.style.display = "flex";
-    play.style.display = "none"
-}
-
-// function closeVideo() {
-//     let  videoContainer = document.getElementById("video-container");
-//     let videoPlayer = document.getElementById("video-player");
-//     let play = document.getElementById("button-play");
-//
-
-//     videoPlayer.src = "";
-//     videoContainer.style.display = "none";
-//     play.style.display = "flex"
-// }
-
-
-// feedback pagination
-const feedbackWrapper = document.querySelector('.feedback-wrapper-down');
-const feedbackDots = document.querySelectorAll('.dot-feedback');
-
-// Функція прокрутки (1 - вправо, -1 - вліво)
-function scrollFeedback(direction) {
-    const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth + 150// Враховуємо відступи
-    feedbackWrapper.scrollBy({left: itemWidth * direction, behavior: 'smooth'});
-}
-
-// Відстеження активної крапки
-feedbackWrapper.addEventListener('scroll', () => {
-    const scrollPosition = feedbackWrapper.scrollLeft;
-    const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth + 10;
-    const activeIndex = Math.round(scrollPosition / itemWidth);
-
-    feedbackDots.forEach((dot, index) => {
-        if (index === activeIndex) {
-            dot.classList.add('active');
-        } else {
-            dot.classList.remove('active');
-        }
-    });
-});
-
-// Клік по крапкам для перемикання
-feedbackDots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth + 10;
-        feedbackWrapper.scrollTo({left: itemWidth * index, behavior: 'smooth'});
-    });
-});
-
 /////////////////scroll slider////////////
 const frontItem = document.querySelectorAll('.front-item');
 const backItem = document.querySelectorAll('.back-item')
-const frontItem2 = document.querySelectorAll('.front-item2');
-const backItem2 = document.querySelectorAll('.back-item2')
-
+const frontItem2 = document.querySelectorAll('.front-item-reverse');
+const backItem2 = document.querySelectorAll('.back-item-reverse')
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // Зупиняємо спостереження після додавання класу
+            observer.unobserve(entry.target); // Зупиняє спостереження після додавання класу
         }
     });
 }, {
     threshold: 0.8
 });
-
 frontItem.forEach(block => {
     observer.observe(block);
 });
@@ -145,9 +28,44 @@ backItem2.forEach(block => {
 })
 
 
+/////////////////////////Mobile const for 4 block////////////////////
+const sliderWrapper = document.querySelector('.slider-wrapper');
+const WhatSliderWrapper = document.querySelector('.what-you-get-slider');
+const tariffsWrapper = document.querySelector('.tariffs-bottom-section')
+const feedbackWrapper = document.querySelector('.feedback-container-bottom');
+
+const sliderDots = document.querySelectorAll('.dot');
+const whatYouGetDots = document.querySelectorAll('.dot-s');
+const trafficsDots = document.querySelectorAll('.tariffs-dot');
+const feedbackDots = document.querySelectorAll('.dot-feedback');
+
+/////////////// Mobile scrolling ///////////////////////////
+function handleScroll(wrapper, itemClass, dots, gap = 15) {
+    wrapper.addEventListener('scroll', () => {
+        const scrollPosition = wrapper.scrollLeft;
+        const itemWidth = wrapper.querySelector(itemClass).offsetWidth + 15;
+
+        const activeIndex = Math.round(scrollPosition / itemWidth);
+
+        dots.forEach((dot, index) => {
+            if (index === activeIndex) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+    });
+}
+handleScroll(sliderWrapper, '.wrapper-item', sliderDots, 55);
+handleScroll(WhatSliderWrapper, '.item', whatYouGetDots);
+handleScroll(tariffsWrapper, '.tariff-item', trafficsDots);
+handleScroll(feedbackWrapper, '.feedback-item', feedbackDots, 150);
+
+
+////////////////Tariffs animation////////////////
 document.addEventListener('scroll', () => {
     const boxes = document.querySelectorAll('.box');
-    const triggerPoint = window.innerHeight * 0.8; // Точка, коли анімація запускається
+    const triggerPoint = window.innerHeight * 0.8;
     let firstTwoAnimated = false;
     const thirdBox = document.querySelector('.tariff-container-3');
 
@@ -165,18 +83,44 @@ document.addEventListener('scroll', () => {
         }
     });
 });
-
-
-
-
-// tooltips
+//////////////////// Tariffs tooltips/////////////////////
 document.addEventListener('DOMContentLoaded', function () {
-    var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    let tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     tooltipTriggerList.forEach(function (tooltipEl) {
         new bootstrap.Tooltip(tooltipEl, {
-            trigger: 'click', // Замість hover для активації при кліку
-            container: 'body', // Щоб уникнути проблем із позиціонуванням у складних компонентах
-            customClass: 'custom-tooltip' // Додатковий клас для стилізації
+            trigger: 'hover',
+            container: 'body',
+            customClass: 'custom-tooltip'
         });
     });
 });
+
+
+/////////////////////Video appearance/////////////////
+function openVideo() {
+    let videoContainer = document.getElementById("video-container");
+    let videoPlayer = document.getElementById("video-player");
+    let play = document.getElementById("button-play")
+
+    videoPlayer.src = "https://www.youtube.com/embed/dQw4w9WgXcQ";
+
+    videoContainer.style.display = "flex";
+    play.style.display = "none"
+}
+
+//////////////feedback pagination//////////////////////
+
+// Функція прокрутки (1 - вправо, -1 - вліво)
+function scrollFeedback(direction) {
+    const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth + 150
+    feedbackWrapper.scrollBy({left: itemWidth * direction, behavior: 'smooth'});
+}
+
+// Клік по крапкам для перемикання
+feedbackDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        const itemWidth = feedbackWrapper.querySelector('.feedback-item').offsetWidth + 10;
+        feedbackWrapper.scrollTo({left: itemWidth * index, behavior: 'smooth'});
+    });
+});
+
