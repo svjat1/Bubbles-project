@@ -128,7 +128,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
     });
 }, {
-    threshold: 0.8 // 50% елемента має бути видимим
+    threshold: 0.8
 });
 
 frontItem.forEach(block => {
@@ -168,42 +168,15 @@ document.addEventListener('scroll', () => {
 
 
 
-// Отримуємо кнопку "X" і поповер
-const closeButton = document.querySelector('.x');
-const closeButton2 = document.querySelector('.x2');
-const closeButton3 = document.querySelector('.x3');
-const closeButton4 = document.querySelector('.x4');
-const openButton = document.querySelector('.popoverButton');
-const openButton2 = document.querySelector('.popoverButton2');
-const openButton3 = document.querySelector('.popoverButton3');
-const openButton4 = document.querySelector('.popoverButton4');
-const popover = document.querySelector('.popoverInfo');
-const popover2 = document.querySelector('.popoverInfo2');
-const popover3 = document.querySelector('.popoverInfo3');
-const popover4 = document.querySelector('.popoverInfo4');
 
-// Додаємо обробник події на кнопку "X"
-closeButton.addEventListener('click', function() {
-    popover.style.display = 'none'; // Приховуємо поповер
-});
-openButton.addEventListener('click', function() {
-    popover.style.display = 'flex'; // Приховуємо поповер
-});
-closeButton2.addEventListener('click', function() {
-    popover2.style.display = 'none'; // Приховуємо поповер
-});
-openButton2.addEventListener('click', function() {
-    popover2.style.display = 'flex'; // Приховуємо поповер
-});
-closeButton3.addEventListener('click', function() {
-    popover3.style.display = 'none'; // Приховуємо поповер
-});
-openButton3.addEventListener('click', function() {
-    popover3.style.display = 'flex'; // Приховуємо поповер
-});
-closeButton4.addEventListener('click', function() {
-    popover4.style.display = 'none'; // Приховуємо поповер
-});
-openButton4.addEventListener('click', function() {
-    popover4.style.display = 'flex'; // Приховуємо поповер
+// tooltips
+document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(function (tooltipEl) {
+        new bootstrap.Tooltip(tooltipEl, {
+            trigger: 'click', // Замість hover для активації при кліку
+            container: 'body', // Щоб уникнути проблем із позиціонуванням у складних компонентах
+            customClass: 'custom-tooltip' // Додатковий клас для стилізації
+        });
+    });
 });

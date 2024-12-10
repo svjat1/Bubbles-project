@@ -11,6 +11,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "del": "^8.0.0",
     "gulp-image": "^6.3.1"
   },
