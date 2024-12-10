@@ -28,7 +28,7 @@ export const minifyHtml = () => {
 };
 
 export const optimizeImages = () => {
-    return gulp.src('src/images/*', { encoding: false })
+    return gulp.src('src/images/**/*', { encoding: false })
         .pipe(imagemin([
             imageminMozjpeg({quality: 75, progressive: true}),
             imageminSvgo(),
