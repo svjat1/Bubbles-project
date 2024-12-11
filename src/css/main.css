@@ -104,6 +104,9 @@ a:visited, a:hover, a:active {
     font-weight: 400;
     line-height: 1.5;
 }
+.navbar-brand{
+    margin-left: 4vw;
+}
 .nav-item:hover .nav-link {
     color: #F2C130;
 }
@@ -129,11 +132,14 @@ a:visited, a:hover, a:active {
     background: #FFF;
     color: #1C274C;
 }
-.container-custom {
+.container-custom-nav {
     max-width: 100vw;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 0;
     overflow-wrap: break-word;
+}
+#but-nav-join{
+    margin-right: 4.1vw;
 }
 /*/////////////////////////////////Header mobile version style///////////////////////////////*/
 @media (max-width: 575px) {
@@ -141,59 +147,80 @@ a:visited, a:hover, a:active {
         max-width: 100%;
     }
     #header {
-        width: 100%;
-        height: 51.25rem;
+        width: 100vw;
+        height: 95vh;
         background-color: #4E5476;
         justify-content: space-between;
-        padding: 0 0 0.8rem 0;
+        padding: 0 0 4.5vw 0;
+        margin: 0;
     }
     .navbar-nav a {
         font-size: 0.875rem;
+    }
+    #navbarNav{
+       padding: 0 35vw 0 35vw
     }
     .button {
         width: 50vw;
         height: 2.875rem;
         gap: 0.625rem;
     }
+    #navbar-toggler{
+        margin-left: 4vw;
+    }
+    #navbar-toggler:hover{
+        background-color: white;
+    }
+    .navbar-brand{
+        margin: 0 0 0 0.7vw;
+    }
+    #english-bubble-block {
+        width: 80vw;
+        margin: 5vw 0 4vw 0;
+    }
     #bubbles {
         width: 85vw;
         color: #FFF;
         text-align: center;
         font-family: Rubik, serif;
-        font-size: 6.75rem;
+        font-size: 26.75vw;
         font-style: normal;
         font-weight: 700;
-        line-height: 6.5rem;
-        letter-spacing: -0.27rem;
+        line-height: 26vw;
+        letter-spacing: -0.27vw;
         word-wrap: break-word;
-    }
-    #english-bubble-block {
-        margin-top: 4rem;
-        width: 80%;
+        position: relative;
     }
     #by-greenForest-container {
-        top: 12rem;
-        width: 13rem;
-        height: 3.2rem;
-        border-radius: 6.875rem;
+        top: 45vw;
+        width: 35vw;
+        height: 11.2vw;
+        border-radius: 5.875vw;
+        position: absolute;
     }
     #by-greenForest-text {
-        width: 9.94rem;
-        height: 1.5rem;
-        font-size: 1.125rem;
-        letter-spacing: -0.045rem;
+        width: 32vw;
+        height: 10.5vw;
+        font-size: 3.125vw;
+        letter-spacing: -0.045vw;
         justify-content: center;
         align-items: center;
     }
     #container-sm-fs {
-        font-size: 1rem;
-        margin-top: 10.8125rem;
+        font-size: 4vw;
+        color: #D5CAF1;
+        text-align: center;
+        font-family: Rubik,serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 40vw;
     }
     #double-main-button {
-        padding: 1.5rem 3.75rem;
-        gap: 0.625rem;
+        padding: 5.61vw 14.02vw;
+        gap: 2.34vw;
         border-radius: 4.25rem;
-        font-size: 1.5rem;
+        font-size: 5.61vw;
         box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     }
     #button-shadow {
@@ -445,8 +472,12 @@ a:visited, a:hover, a:active {
 }
 /*//////////////////////////////////Event mobile version style///////////////////////////////*/
 @media (max-width: 576px) {
+    #events{
+        width: 100vw;
+        margin-left: 0;
+    }
     .event-buttons-wrapper {
-        width: 100%;
+        width: 100vw;
         flex-wrap: nowrap;
         overflow-x: auto;
         scrollbar-width: none;
@@ -680,10 +711,10 @@ span{
 }
 /*///////////////////////////Slider 5/////////////////////////*/
 .theme-block-describe5 {
-    width: 71%;
+    width: 76%;
     color: #062440;
     font-family: Rubik, serif;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -780,7 +811,14 @@ span{
     .theme-block {
         display: none;
     }
+    .theme-block-mob svg {
+        width: 9.35vw;
+        height: 9.35vw;
+        margin-right: 2.8vw;
+    }
     .theme-block-mob img {
+        width: 9.35vw;
+        height: 9.35vw;
         margin-right: 2.8vw;
     }
     .theme-block-mob {
@@ -795,7 +833,7 @@ span{
         letter-spacing: -0.3vw;
     }
     .theme-block-describe, .theme-block-describe-reverse, .theme-block-describe5 {
-        width: 85%;
+        width: 95%;
         color: #062440;
         font-family: Rubik, serif;
         font-size: 4.7vw;
@@ -832,7 +870,9 @@ span{
         width: 3.74vw;
         height: 3.74vw;
         background-color: gray;
-        border-radius: 50%;
+        border-top-right-radius: 50%; /* Заокруглення верхнього правого кута */
+        border-bottom-right-radius: 50%; /* Заокруглення нижнього правого кута */
+        border-bottom-left-radius: 50%; /* Заокруглення нижнього правого кута */
         margin: 0 1.2vw;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -1019,11 +1059,11 @@ span{
         width: 90.2vw;
         background: #D5CAF1;
     }
-    .event-access-component img,
-    .community-component img,
-    .qualified-teachers-component img,
-    .regular-practice-component img,
-    .event-formats-component img {
+    .event-access-component svg,
+    .community-component svg,
+    .qualified-teachers-component svg,
+    .regular-practice-component svg,
+    .event-formats-component svg {
         width: 14.02vw;
         height: 14.02vw;
     }
