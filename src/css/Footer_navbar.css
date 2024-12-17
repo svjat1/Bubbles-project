@@ -1,0 +1,75 @@
+/*//////////////////////////////////Footer navbar style///////////////////////////////*/
+.footer .navbar {
+    padding: 2.78vw;
+}
+#f-button {
+    width: 9.26vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4.72vw;
+    border: 1px solid #D2D2D7;
+    background-color: #4E5476;
+    color: #FFF;
+    font-family: Rubik, serif;;
+    font-size: 1.11vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#f-button svg {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+#f-button span {
+    margin-left: 1vw;
+    font-size: 1.51vw;
+}
+#f-button:hover {
+    background: #FFF;
+    color: #383F65;
+}
+#f-button:hover svg path {
+    fill: #383F65;
+}
+@media (max-width: 576px) {
+    .footer .navbar {
+        width: 100vw;
+        margin-top: 14vw;
+        background-color: #2C324D;;
+    }
+    #f-button{
+        display: none;
+    }
+    .footer .f-button {
+        width: 25.26vw;
+        height: 10.47vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 2vw 3vw;
+        gap: 0.69vw;
+        font-size: 1.11vw;
+        border-radius: 15.91vw;
+        background-color: #2C324D;
+        border: 0.5px solid white;
+    }
+    .f-button svg {
+        width: 4.2vw;
+        height: 4.2vw;
+        margin-top: 0.7vw;
+    }
+    .f-button span {
+        margin-left: 0.69vw;
+        font-size: 3.74vw;
+        color: white;
+    }
+    .f-button:hover {
+        background: #FFF;
+        color: #383F65;
+    }
+    .f-button:hover svg path {
+        fill: #383F65;
+    }
+}

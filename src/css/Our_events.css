@@ -1,0 +1,88 @@
+/*//////////////////////////////////Events style///////////////////////////////*/
+.event-wrapper {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 120px auto 0 auto;
+    padding: 2rem 0;
+    align-items: center;
+}
+.our-events {
+    color: #FFF;
+    font-family: Rubik, serif;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.22rem;
+}
+.event-buttons-list {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.event-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.83rem 1.67rem;
+    gap: 0.69rem;
+    border-radius: 4.72rem;
+    background: #FFF;
+    color: #1C274C;
+    text-align: center;
+    font-family: Rubik, serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.event-button:hover {
+    background: #F2C130;
+}
+.event-button a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+.event-button a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+/*//////////////////////////////////Event mobile version style///////////////////////////////*/
+@media (max-width: 576px) {
+    #events {
+        width: 100vw;
+        margin-left: 0;
+    }
+    .event-buttons-list {
+        width: 100vw;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        justify-content: flex-start;
+    }
+    .event-buttons-list::-webkit-scrollbar {
+        display: none;
+    }
+    .event-button {
+        flex: 0 0 auto;
+        padding: 3.10vw 3.24vw;
+        font-size: 4vw;
+    }
+    .our-events {
+        color: #FFF;
+        font-family: Rubik, serif;
+        font-size: 11.68vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -2px;
+    }
+    .event-wrapper {
+        margin-top: 10vw;
+    }
+}

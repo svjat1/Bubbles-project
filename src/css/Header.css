@@ -1,0 +1,380 @@
+/*//////////////////////////////////NavBar style///////////////////////////////*/
+.navbar {
+    background-color: #4E5476;
+}
+.navbar-nav {
+    width: 22vw;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav a {
+    text-align: center;
+    color: #FFF;
+    font-family: Rubik, serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.navbar-brand {
+    margin-left: 4vw;
+}
+.nav-item:hover .nav-link {
+    color: #F2C130;
+}
+.button-join {
+    width: 12.7vw;
+    height: 5.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    background: none;
+    border: 0.05vw solid #D2D2D7;
+    border-radius: 5.5vw;
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik, serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.button-join:hover {
+    background: #FFF;
+    color: #1C274C;
+}
+.container-custom-nav {
+    max-width: 100vw;
+    width: 100vw;
+    margin: 0 0;
+}
+#but-nav-join {
+    margin:0 4.1vw 0 0;
+    font-size: 1.37vw;
+}
+#navbarNav{
+    justify-content: center;
+}
+#navbar-toggler {
+    width: 8vw;
+    height: 8vw;
+    margin-left: 4vw;
+    padding: 1vw;
+    border-radius: 50%;
+}
+#navbar-toggler svg{
+    width: 6vw;
+    height: 6vw;
+    margin: auto;
+}
+/*//////////////////////////////////Header style///////////////////////////////*/
+.header {
+    width: 100%;
+    height: 44.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #4E5476;
+    border-bottom-left-radius: 5.56rem;
+    border-bottom-right-radius: 5.56rem;
+}
+.english-bubble-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 3vw 0 0 0;
+}
+.english-bubble-title {
+    width: 100%;
+    height: 7.43vw;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Rubik, serif;
+    font-size: 9.72vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7.57vw;
+    letter-spacing: -0.39vw;
+}
+.by-greenForest-container {
+    width: 13.26vw;
+    height: 3.89vw;
+    position: absolute;
+    top: 6.6vw;
+    transform: rotate(-4.021deg);
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 7.64vw;
+    background: #997AEA;
+    display: flex;
+}
+.by-greenForest-text {
+    width: 11.04vw;
+    height: 1.67vw;
+    display: flex;
+    color: #FFF;
+    font-family: Rubik, serif;
+    font-size: 1.39vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.06vw;
+    text-transform: uppercase;
+}
+.english-bubble-description {
+    width: 70%;
+    height: 15%;
+    text-align: center;
+    margin-top: 4vw;
+    color: #D5CAF1;
+    font-family: Rubik, serif;
+    font-size: 1.4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.double-button-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.double-main-button {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    padding: 1.67vw 4.17vw;
+    justify-content: center;
+    align-items: center;
+    gap: 0.69vw;
+    border-radius: 4.72vw;
+    border: none;
+    background: #F2C130;
+    color: #1C274C;
+    text-align: center;
+    font-family: Rubik, serif;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    box-shadow: 0 0.28vw 0.56vw rgba(0, 0, 0, 0.1);
+}
+.double-main-button:hover {
+    background: #FFF;
+}
+.button-shadow {
+    width: 97%;
+    height: 97%;
+    position: absolute;
+    z-index: 1;
+    top: 0.56vw;
+    left: 0.28vw;
+    transform: rotate(4.021deg);
+    background-color: transparent;
+    border: 0.14vw solid #FFC107;
+    border-radius: 2.08vw;
+}
+.arrow-icon {
+    position: absolute;
+    z-index: 1;
+    top: 13.89%;
+    right: -4.86vw;
+    transform: translateY(-50%);
+    color: #2E2E40;
+}
+/*//////////////////////////////////Photo avatar circle style///////////////////////////////*/
+.circle-image-wrapper {
+    width: 100%;
+    height: 15.69vw;;
+    position: relative;
+    margin-top: 2vw;
+}
+.circle-image-list {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0.5;
+}
+.circle-avatar {
+    width: 14.69vw;
+    height: 14.69vw;
+    margin-left: -2.08vw;
+    left: 0;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(211, 211, 211);
+    border-radius: 11.81vw;;
+    flex-shrink: 0;
+}
+.circle-avatar.highlight {
+    background-color: #2C324D;
+}
+/*/////////////////////////////////Header mobile version style///////////////////////////////*/
+@media (max-width: 575px) {
+    .body-wrapper-mobile {
+        max-width: 100vw;
+    }
+    #header {
+        width: 100vw;
+        height: 175vw;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 0 4.5vw 0;
+        background-color: #4E5476;
+    }
+    .navbar-nav a {
+        font-size: 0.875rem;
+    }
+    #navbarNav {
+        padding: 0 35vw 0 35vw;
+    }
+    .navbar-brand{
+        width: 20vw;
+        margin-right: 0;
+    }
+    .navbar-brand img{
+        width: 20vw;
+        height: auto;
+    }
+    .button-join {
+        width: 40vw;
+        height: 11vw;
+        font-size: 3.74vw;
+    }
+    #navbar-toggler {
+        width: 13vw;
+        height: 13vw;
+        margin-left: 4vw;
+        padding: 1vw;
+        border-radius: 50%;
+    }
+    #navbar-toggler svg{
+        width: 11vw;
+        height: 11vw;
+        margin: auto;
+    }
+    #navbar-toggler:focus,
+    #navbar-toggler:active {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    #navbar-toggler {
+        transition: background-color 0.1s ease;
+    }
+    #navbar-toggler:focus{
+        background-color: #fff !important;
+    }
+    .navbar-brand {
+        margin: 0 0 0 0.7vw;
+    }
+    /*/////////////////////////////////////Bubble////////////////////////////////////*/
+    #english-bubble-block {
+        width: 80vw;
+        margin: 5vw 0 4vw 0;
+    }
+    #bubbles {
+        width: 85vw;
+        position: relative;
+        color: #FFF;
+        text-align: center;
+        font-family: Rubik, serif;
+        font-size: 26.75vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26vw;
+        letter-spacing: -0.27vw;
+        word-wrap: break-word;
+    }
+    #by-greenForest-container {
+        width: 35vw;
+        height: 11.2vw;
+        position: absolute;
+        top: 45vw;
+        border-radius: 5.875vw;
+    }
+    #by-greenForest-text {
+        width: 32vw;
+        height: 10.5vw;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.125vw;
+        letter-spacing: -0.045vw;
+    }
+    #container-sm-fs {
+        width: 100vw;
+        height: 17%;
+        margin-top: 45vw;
+        font-size: 3.7vw;
+        color: #D5CAF1;
+        text-align: center;
+        font-family: Rubik, serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    #double-main-button {
+        padding: 4vw 10.02vw;
+        gap: 2.34vw;
+        border-radius: 4.25rem;
+        font-size: 5.61vw;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+    #button-shadow {
+        width: 97%;
+        height: 97%;
+        top: 0.5rem;
+        left: 0.25rem;
+        border: 0.125rem solid #FFC107;
+        border-radius: 1.875rem;
+    }
+    .arrow-icon {
+        display: none;
+    }
+    /*/////////////////////////////Avatar list///////////////////////*/
+    #circle-image-wrapper {
+        width: 100vw;
+        height: 51.125vw;
+        position: relative;
+    }
+    #circle-image-list {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        overflow: hidden;
+    }
+    #avatar-1,
+    #avatar-2,
+    #avatar-3,
+    #avatar-4,
+    #avatar-5,
+    #avatar-6,
+    #avatar-7,
+    #avatar-8 {
+        width: 50.8vw;
+        height: 50.8vw;
+        margin-left: -2rem;
+        left: 0;
+        border-radius: 10.625rem;
+        background-color: rgba(211, 211, 211);
+        overflow-x: hidden;
+    }
+    .circle-avatar:hover {
+        background-color: rgb(243, 240, 240);
+    }
+}
+@media (max-width: 766px) {
+    #navbarNav {
+        padding: 0 33vw 0 38vw;
+    }
+}

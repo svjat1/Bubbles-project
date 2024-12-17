@@ -1,0 +1,85 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+#body-wrapper-desktop{
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    background: #2C324D;
+}
+@media (max-width: 576px) {
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    #body-wrapper-desktop {
+        width: 100vw;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        background: #2C324D;
+    }
+}
+
+/*////////////////////////////////// <a> link style all doc///////////////////////////////*/
+a {
+    text-decoration: none !important;
+    color: inherit;
+    outline: none;
+}
+a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+/*//////////////////////////////////////ToolTip(popover) all doc////////////////////////////////*/
+.myToolTip {
+    width: 1.58vw;
+    height: 1.58vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5vw;
+    background: none;
+    color: #000000;
+    border: 1px solid #606060;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.3vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-sizing: border-box;
+}
+.myToolTip:hover {
+    transform: scale(1.1);
+    background-color: #bcbec0;
+}
+.custom-tooltip .tooltip-inner {
+    width: 17.75vw;
+    height: auto;
+    max-width: 500px;
+    padding: 0.9vw;
+    color: #212529;
+    text-align: left;
+    background: #FFF;
+    border: 1px solid #ced4da;
+    border-radius: 1.11vw;
+    box-shadow: 0 0.28vw 0.28vw 0 rgba(0, 0, 0, 0.25);
+    font-size: 0.97vw;
+    font-family: Rubik, serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.tooltip {
+    --bs-tooltip-opacity: 1 !important;
+}

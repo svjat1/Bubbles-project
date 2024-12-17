@@ -1,0 +1,232 @@
+/*//////////////////////////////////How to join style///////////////////////////////*/
+.join-wrapper-mobile {
+    display: none;
+}
+.join-wrapper {
+    width: 95vw;
+    margin: 8.47% auto 0 auto;
+    background-image: url("/images/howToJoin/line.png");
+    background-size: 57.43vw 42.38vw;
+    background-position: 30.25vw 39.72vw;
+    background-repeat: no-repeat;
+}
+.join-top-container {
+    width: 100%;
+    height: 48.98vw;
+    display: flex;
+    justify-content: space-between;
+}
+.how-to-join {
+    height: 50%;
+    display: flex;
+    align-items: end;
+    padding-bottom: 3.47vw;
+}
+.how-to-join div {
+    color: #FFF;
+    font-family: Rubik, serif;
+    font-size: 5.56vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.56vw;
+    letter-spacing: -0.22vw;
+}
+.first-second-step-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.step-1 {
+    width: 23.33vw;
+    height: 24.65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    border-radius: 4.17vw;
+    background: #FFF;
+    padding: 2.78vw;
+}
+.step-5:hover {
+    background: #F2C130;
+}
+.step-theme {
+    color: #1C274C;
+    font-family: Rubik, serif;
+    font-size: 2.22vw;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+.step-theme-5 {
+    display: flex;
+    justify-content: space-between;
+}
+.step-describe {
+    width: 18.61vw;
+    color: #1C274C;
+    font-family: Rubik, serif;
+    font-size: 1.39vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mobile-screen-section {
+    width: 46.96vw;
+    height: 48.98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #997AEA;
+    border-radius: 4.17vw;
+}
+.mobile-screen-section img {
+    width: 54.3%;
+    height: 95.4%;
+}
+.join-bottom-container {
+    width: 100%;
+    display: flex;
+    margin-top: 0.49vw;
+}
+.left-bottom-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.step-img {
+    width: 23.33vw;
+    flex-shrink: 0;
+    border-radius: 4.17vw;
+    background: #F4E3B0;
+}
+.step-img img {
+    width: 100%
+}
+.fourth-fifth-step-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.49vw;
+}
+.right-bottom-section {
+    width: 46.96vw;
+    height: 49.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.step3-img {
+    width: 46.96vw;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #D5CAF1;
+    border-radius: 4.17vw;
+}
+.step3-img img {
+    width: 80%;
+    height: 100%;
+}
+/*/////////////////////////Mobile How to join style/////////////////////////*/
+@media (max-width: 576px) {
+    .join-wrapper {
+        display: none;
+    }
+    .join-wrapper-mobile {
+        width: 100vw;
+        display: flex;
+        margin: 12.14vw 0 0 0;
+    }
+    .section-mobile {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-theme {
+        width: 92.6vw;
+        margin-bottom: 7.47vw;
+        text-align: center;
+        color: #ffffff;
+        font-family: Rubik, serif;
+        font-size: 11.69vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.47vw;
+    }
+    .mobile-screenshot-section {
+        width: 100vw;
+        height: 164.9vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.17vw;
+        flex-shrink: 0;
+        background-color: #997AEA;
+        border-radius: 14.02vw;
+    }
+    .mobile-screenshot-section img {
+        width: 85.75vw;
+        height: 157.24vw;
+    }
+    .step-1 {
+        width: 100vw;
+        height: 53.5vw;
+        padding: 5.61vw;
+        margin-bottom: 1.17vw;
+        border-radius: 9.35vw;
+    }
+    .step-describe {
+        width: 88.88vw;
+        height: 16.85vw;
+        padding-right: 4.68vw;
+        font-size: 4.68vw;
+    }
+    .step-theme {
+        font-size: 7.48vw;
+    }
+    #step3, #step4, #step5 {
+        width: 100vw;
+        height: 47.9vw;
+        padding: 5.61vw;
+        border-radius: 9.35vw;
+        background: #FFF;
+    }
+    .step-img {
+        width: 100vw;
+        height: 57.05vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.17vw;
+        border-radius: 14.02vw;
+    }
+    .step-img img {
+        width: 53.97vw;
+        height: 57.05vw;
+    }
+    .step3-img {
+        width: 100vw;
+        height: 57.05vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: #D5CAF1;
+        border-radius: 14.02vw;
+    }
+    .step3-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

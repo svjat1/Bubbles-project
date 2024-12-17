@@ -1,0 +1,33 @@
+{
+  "name": "bubbles-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "del": "^8.0.0",
+    "gulp-image": "^6.3.1",
+    "swiper": "^11.1.15"
+  },
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^11.0.1"
+  }
+}
