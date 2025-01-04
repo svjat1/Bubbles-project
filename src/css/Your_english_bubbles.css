@@ -34,7 +34,7 @@
     -webkit-animation-delay: 30.2s;
 }
 .marquee-text {
-    width: 113vw;
+    width: 116vw;
     display: inline-block;
     will-change: transform;
     -webkit-font-smoothing: antialiased;

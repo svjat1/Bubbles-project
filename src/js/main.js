@@ -1,32 +1,51 @@
 /////////////////scroll slider////////////
-const frontItem = document.querySelectorAll('.front-item');
-const backItem = document.querySelectorAll('.back-item')
-const frontItem2 = document.querySelectorAll('.front-item-reverse');
-const backItem2 = document.querySelectorAll('.back-item-reverse')
+document.querySelectorAll(".wrapper-item").forEach((wrapper) => {
+    const front = wrapper.querySelector(".front-item");
+    const back = wrapper.querySelector(".back-item");
 
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: wrapper,
+            scrub: true,
+            start: "30% bottom",
+            end: "center center",
         }
-    });
-}, {
-    threshold: 0.8
+    })
+        .fromTo(
+            front,
+            { xPercent: 0 },
+            { xPercent: 30.5, ease: "none" }
+        )
+        .fromTo(
+            back,
+            { xPercent: 0 },
+            { xPercent: -30.5, ease: "none" }, "<"
+        );
 });
-frontItem.forEach(block => {
-    observer.observe(block);
-});
-backItem.forEach(block => {
-    observer.observe(block)
-})
-frontItem2.forEach(block => {
-    observer.observe(block);
-});
-backItem2.forEach(block => {
-    observer.observe(block)
-})
 
+document.querySelectorAll(".wrapper-item-reverse").forEach((wrapper) => {
+    const front = wrapper.querySelector(".front-item-reverse");
+    const back = wrapper.querySelector(".back-item-reverse");
+
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: wrapper,
+            scrub: true,
+            start: "30% bottom",
+            end: "center center",
+        }
+    })
+        .fromTo(
+            front,
+            { xPercent: 0 },
+            { xPercent: -36.8, ease: "none" }
+        )
+        .fromTo(
+            back,
+            { xPercent: 0 },
+            { xPercent: 24.9, ease: "none" }, "<"
+        );
+});
 
 /////////////////////////mobile style scrolling/////////////////////////
 new Swiper('.swiper', {
