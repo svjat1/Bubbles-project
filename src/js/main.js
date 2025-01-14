@@ -6,20 +6,20 @@ document.querySelectorAll(".wrapper-item").forEach((wrapper) => {
     gsap.timeline({
         scrollTrigger: {
             trigger: wrapper,
-            scrub: true,
-            start: "30% bottom",
+            scrub: 0,
+            start: "top bottom",
             end: "center center",
         }
     })
         .fromTo(
             front,
             { xPercent: 0 },
-            { xPercent: 30.5, ease: "none" }
+            { xPercent: 30.5,duration: 2,ease: "none" }
         )
         .fromTo(
             back,
             { xPercent: 0 },
-            { xPercent: -30.5, ease: "none" }, "<"
+            { xPercent: -30.5,duration: 2,ease: "none" }, "<"
         );
 });
 
@@ -30,20 +30,20 @@ document.querySelectorAll(".wrapper-item-reverse").forEach((wrapper) => {
     gsap.timeline({
         scrollTrigger: {
             trigger: wrapper,
-            scrub: true,
-            start: "30% bottom",
+            scrub: 0,
+            start: "top bottom",
             end: "center center",
         }
     })
         .fromTo(
             front,
             { xPercent: 0 },
-            { xPercent: -36.8, ease: "none" }
+            { xPercent: -36.8, duration: 2,ease: "none" }
         )
         .fromTo(
             back,
             { xPercent: 0 },
-            { xPercent: 24.9, ease: "none" }, "<"
+            { xPercent: 24.9, duration: 2,ease: "none" }, "<"
         );
 });
 

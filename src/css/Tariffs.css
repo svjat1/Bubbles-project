@@ -52,7 +52,7 @@
 .tariff-container-2,
 .tariff-container-3 {
     width: 32%;
-    height: 75%;
+    height: 50.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -64,20 +64,11 @@
 }
 .tariff-container-top-section {
     width: 90%;
-    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-#margin1 {
-    margin-bottom: 17.85vw;
-}
-#margin2 {
-    margin-bottom: 6.4vw;
-}
-#margin3 {
-    margin-bottom: 4.2vw;
-}
+
 .tariff-container-theme-section {
     width: 120%;
     display: flex;
